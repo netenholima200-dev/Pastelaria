@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .hero-header {
-  padding: 0.5em;
+  padding: 1em;
   width: 100%;
   background-color: #ffffff;
   display: flex;
@@ -13,14 +14,12 @@
   justify-content: space-between;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid #E0E0E0;
-}
-.hero-header .hero-header__logo {
-  margin-top: 0.6em;
-  margin-left: 1em;
+  position: fixed;
 }
 .hero-header .hero-header__logo p {
   font-size: 1.5em;
   font-weight: 700;
+  font-family: "Instrument Sans", sans-serif;
 }
 .hero-header .nav-bar {
   display: none;
@@ -28,13 +27,12 @@
 .hero-header .mobile-menu {
   position: absolute;
   top: 8%;
-  text-align: start;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   left: 0;
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 60vh;
   visibility: hidden;
   background-color: #fff;
+  text-align: start;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 .hero-header .mobile-menu ul li {
@@ -65,10 +63,81 @@
   width: 1em;
 }
 .hero-header .menu-mobile:hover {
-  padding: 0.6em 0.7em;
   background-color: #B25334;
   border-radius: 0.5em;
   color: #fff;
+}
+@media (min-width: 1030px) {
+  .hero-header {
+    padding: 1.5em;
+  }
+  .hero-header .nav-bar {
+    display: block;
+    margin-right: 2em;
+  }
+  .hero-header .nav-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+  .hero-header .nav-bar ul li {
+    list-style-type: none;
+  }
+  .hero-header .nav-bar ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    padding: 0.5em;
+  }
+  .hero-header .nav-bar ul li a:hover {
+    color: #F97415;
+  }
+  .hero-header .mobile-menu {
+    display: none;
+  }
+  .hero-header .menu-mobile {
+    display: none;
+  }
+}
+
+.banner {
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to top, rgba(249, 116, 21, 0.9), rgba(249, 116, 21, 0.6), rgba(249, 116, 21, 0.2)), url(/img/benner.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner .banner-legends {
+  padding: 1em;
+  text-align: center;
+}
+.banner .banner-legends h1 {
+  font-size: 3.5em;
+  color: #fff;
+  font-family: "Instrument Sans", sans-serif;
+}
+.banner .banner-legends p {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  color: #fff;
+}
+.banner .btn-whats__link {
+  display: inline-block;
+  padding: 1em;
+  background-color: #FDF3E8;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  color: #F97415;
+  border-radius: 1em;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
