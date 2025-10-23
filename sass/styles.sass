@@ -114,9 +114,8 @@
     background-image: linear-gradient(
             to top,
             rgba(255, 163, 64, 0.85),
-  rgba(255, 180, 90, 0.55),
-  rgba(255, 210, 130, 0.2)
-        ), url(/img/benner.jpg)
+            rgba(255, 180, 90, 0.55),
+            rgba(255, 210, 130, 0.2) ), url(/img/benner.jpg)
     display: flex
     align-items: center
     justify-content: center
@@ -160,16 +159,18 @@
         filter: brightness(1.1)
 
 .menu-promocao__legends
-    height: 10vh
+    height: 30vh
     display: flex
     align-items: center
     justify-content: center
+    flex-direction: column
     background-color: #ffffff
-    .menu-promocao__legends
     .menu-promocao__h3
-        font-size: 2em
+        font-size: 2.5em
         font-family: "Instrument Sans", sans-serif
-
+    p 
+        font-size: 1.5em
+        padding: 0.5em
 
 .grade-imgs
-    background-color:  #ffffff    
+    background-color: #ffffff

@@ -161,15 +161,20 @@
 }
 
 .menu-promocao__legends {
-  height: 10vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #ffffff;
 }
 .menu-promocao__legends .menu-promocao__h3 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: "Instrument Sans", sans-serif;
+}
+.menu-promocao__legends p {
+  font-size: 1.5em;
+  padding: 0.5em;
 }
 
 .grade-imgs {
