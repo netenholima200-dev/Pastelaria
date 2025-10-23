@@ -6,3 +6,10 @@ function animarMenu() {
     menuDiv.classList.toggle('abrir')
     btnAnimar.classList.toggle('ativo')
 }
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

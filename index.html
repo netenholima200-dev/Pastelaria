@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelaria</title>
-    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/swiperjs.css">
 
 <body>
     <header class="hero-header">
@@ -49,14 +51,42 @@
         <div class="banner-legends">
             <h1>Fome de Pastel?</h1>
             <p>Pastéis fresquinhos feitos na hora com os melhores ingredientes!</p>
-            
+
         </div>
         <div class="btn-whats">
-           <a class="btn-whats__link" href="#"> <img class="img-whats" src="/img/whatsapp-brands-solid-full (1).svg" alt="">
-            Fazer pedido no WhatsApp</a>
+            <a class="btn-whats__link" href="#"> <img class="img-whats" src="/img/whatsapp-brands-solid-full (1).svg"
+                    alt="">
+                Fazer pedido no WhatsApp</a>
         </div>
     </section>
 
+    <section class="menu-promocao">
+        <div class="menu-promocao__legends">
+            <h3 class="menu-promocao__h3">Promoções</h3>
+        </div>
+    </section>
+
+    <section class="grade-imgs">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/img.promocao.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/img.promocao2.png" alt=""></div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
