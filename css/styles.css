@@ -161,7 +161,7 @@
 }
 
 .menu-promocao__legends {
-  height: 25vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,7 +178,7 @@
 }
 .menu-promocao__legends p {
   color: #CA7027;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .grade-imgs {
