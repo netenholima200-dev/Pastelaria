@@ -15,6 +15,7 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid #E0E0E0;
   position: fixed;
+  z-index: 99;
 }
 .hero-header .hero-header__logo p {
   font-size: 1.5em;
@@ -168,11 +169,15 @@
   flex-direction: column;
   background-color: #ffffff;
 }
+@media (min-width: 1030px) {
+  .menu-promocao__legends {
+    height: 35vh;
+  }
+}
 .menu-promocao__legends .menu-promocao__h3 {
   font-size: 2.5em;
   font-family: "Instrument Sans", sans-serif;
   color: #9A3D11;
-  font-size: 3em;
   padding-bottom: 0.2em;
   text-align: center;
 }
@@ -180,9 +185,191 @@
   color: #CA7027;
   font-size: 1em;
 }
+@media (min-width: 1030px) {
+  .menu-promocao__legends .menu-promocao__h3 {
+    font-size: 4em;
+  }
+  .menu-promocao__legends p {
+    font-size: 2em;
+  }
+}
 
 .grade-imgs {
   background-color: #ffffff;
+}
+
+.div-cabecalho {
+  display: none;
+}
+@media (min-width: 1030px) {
+  .div-cabecalho {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    margin: 1em 0 0.5em 0;
+    font-family: "Instrument Sans", sans-serif;
+    color: #9A3D11;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1030px) {
+  .grade-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6em;
+    margin-bottom: 0;
+  }
+}
+
+.menu-pasteisSal {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+@media (min-width: 1030px) {
+  .menu-pasteisSal {
+    height: 60vh;
+  }
+}
+.menu-pasteisSal .cardapios-descricao {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-family: "Instrument Sans", sans-serif;
+  color: #9A3D11;
+  text-align: center;
+}
+@media (min-width: 1030px) {
+  .menu-pasteisSal .cardapios-descricao {
+    display: none;
+  }
+}
+.menu-pasteisSal .menu-pasteisSal__header {
+  background-color: #CA7027;
+  border-radius: 1em 1em 0 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-legenda {
+  text-align: start;
+  padding: 1em;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-legenda a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio {
+  width: 400px;
+  height: 5.5em;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #CA7027;
+  border-radius: 0.5em 0.5em 0 0;
+  margin: 0 0.5em 0.5em 0.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio .name {
+  color: #9A3D11;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio .valor {
+  color: #9A3D11;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio .img-item {
+  width: 100px;
+  height: 5em;
+  margin-right: 0.5em;
+  border-radius: 1em 1em;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio:hover {
+  border-left: 5px solid #D2691E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-2 {
+  margin: 0 0.5em;
+  width: 400px;
+  background-color: #fff;
+  height: 5.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #CA7027;
+  margin: 0 0.5em 0.5em 0.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-2 .name {
+  color: #9A3D11;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-2 .valor {
+  color: #9A3D11;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-2 .img-item {
+  width: 100px;
+  height: 5em;
+  margin-right: 0.5em;
+  border-radius: 1em 1em;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-2:hover {
+  border-left: 5px solid #D2691E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-3 {
+  width: 400px;
+  height: 5.5em;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #CA7027;
+  border-radius: 0 0 0.5em 0.5em;
+  margin: 0 0.5em 0.5em 0.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-3 .name {
+  color: #9A3D11;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-3 .valor {
+  color: #9A3D11;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-3 .img-item {
+  width: 100px;
+  height: 5em;
+  margin-right: 0.5em;
+  border-radius: 1em 1em;
+}
+.menu-pasteisSal .menu-pasteisSal__header .cardapio-3:hover {
+  border-left: 5px solid #D2691E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.div-cabecalho-2 {
+  display: none;
+}
+@media (min-width: 1030px) {
+  .div-cabecalho-2 {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    margin: 1.5em 0 0.5em 0;
+    font-family: "Instrument Sans", sans-serif;
+    color: #9A3D11;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
