@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #ebaa65;
+}
+
 .hero-header {
   padding: 1em;
   width: 100%;
@@ -167,7 +171,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #ebaa65;
 }
 @media (min-width: 1030px) {
   .menu-promocao__legends {
