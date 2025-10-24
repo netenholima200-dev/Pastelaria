@@ -357,19 +357,4 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.div-cabecalho-2 {
-  display: none;
-}
-@media (min-width: 1030px) {
-  .div-cabecalho-2 {
-    display: block;
-    text-align: center;
-    font-size: 3em;
-    margin: 1.5em 0 0.5em 0;
-    font-family: "Instrument Sans", sans-serif;
-    color: #9A3D11;
-    text-align: center;
-  }
-}
-
 /*# sourceMappingURL=styles.css.map */
