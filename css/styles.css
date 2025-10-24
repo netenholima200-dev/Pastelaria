@@ -261,7 +261,7 @@
   color: #fff;
 }
 .menu-pasteisSal .menu-pasteisSal__header .cardapio {
-  width: 400px;
+  width: 350px;
   height: 5.5em;
   background-color: #fff;
   display: flex;
@@ -294,7 +294,7 @@
 }
 .menu-pasteisSal .menu-pasteisSal__header .cardapio-2 {
   margin: 0 0.5em;
-  width: 400px;
+  width: 350px;
   background-color: #fff;
   height: 5.5em;
   display: flex;
@@ -325,7 +325,7 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 .menu-pasteisSal .menu-pasteisSal__header .cardapio-3 {
-  width: 400px;
+  width: 350px;
   height: 5.5em;
   background-color: #fff;
   display: flex;
