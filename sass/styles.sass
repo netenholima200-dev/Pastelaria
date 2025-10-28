@@ -3,6 +3,7 @@
     @media (min-width: 1030px)
         @content
 
+@import 'rapido'
 // --- RESET ---
 *
     margin: 0
@@ -10,10 +11,7 @@
     box-sizing: border-box
     font-family: "Inter", sans-serif
 
-body
-   
 
-// --- HEADER ---
 .hero-header
     padding: 1em
     width: 100%
@@ -173,7 +171,7 @@ body
         height: 35vh
     .menu-promocao__h3
         font-size: 2.5em
-        font-family: "Instrument Sans", sans-serif
+        font-family: $font-primaria
         color: #9A3D11
 
         padding-bottom: 0.2em
@@ -198,127 +196,320 @@ body
         text-align: center
         font-size: 3em
         margin: 1em 0 0.5em 0
-        font-family: "Instrument Sans", sans-serif
+        font-family: $font-primaria
         color: #9A3D11
         text-align: center
 
-.grade-menu    
-    background-color: #fff
-    @include desktop
-        display: flex
-        align-items: center
-        justify-content: center
-        gap: 1.6em
-        margin-bottom: 0
-.menu-pasteisSal
-    margin-top: 3em
+.Titulo
+    text-align: center
+    font-size: 2em
+    color: $color-primario
+    margin: 1em 0 1em 0
+
+.section-menu__salgados
+
+    height: 100%
     display: flex
     align-items: center
+    justify-content: center
     flex-direction: column
-    margin-bottom: 0
+    gap: 1em
     @include desktop
-        height: 60vh
-    .cardapios-descricao
-        font-size: 3em
-        margin-bottom: 1em
-        font-family: "Instrument Sans", sans-serif
-        color: #9A3D11
-        text-align: center
-        @include desktop
-            display: none
-    .menu-pasteisSal__header
-        background-color: #CA7027
+        flex-direction: row
+
+    .menu-salgados__fundoC
+        background-color: $color-primario
         border-radius: 1em 1em 0 0
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4)
-        .cardapio-legenda
+        box-shadow: 0 4px 10px rgba(100, 50, 25, 0.4)
+
+        .menu-salgados__h3
+            font-size: 1.5em
+            font-family: $font-primaria
+            color: $color-branco
+            padding: 0.5em
             text-align: start
-            padding: 1em
-            a
-                text-decoration: none
-                color: #fff
-
-        .cardapio
+            @include desktop
+                font-size: 1.9em
+        .menu-salgados__item
             width: 350px
-            height: 5.5em
-            background-color: #fff
-            display: flex
-            align-items: center
-            justify-content: space-between
-            border: 1px solid #CA7027
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
+            background-color: $color-branco
             border-radius: 0.5em 0.5em 0 0
-            margin: 0 0.5em 0.5em 0.5em
+            display: flex
+            align-items: center
+            justify-content: space-between
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
             transition: all 0.3s ease
-            
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
+                font-weight: bold
+                margin-left: 0.5em
+            .valor
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
+                margin-right: 0.5em
 
-            .name
-                color: #9A3D11
-                font-weight: bold
-                margin-left: 0.5em
-            .valor
-                color: #9A3D11
-            .img-item
-                width: 100px
-                height: 5em
-                margin-right: 0.5em
-                border-radius: 1em 1em
-        .cardapio:hover
-            border-left: 5px solid #D2691E
-            transform: translateY(-2px)
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15)
-        .cardapio-2
-            margin: 0 0.5em
+        .menu-salgados__item:hover
+            @include hover-menu-item
+
+        .menu-salgados__item-2
             width: 350px
-            background-color: #fff
-            height: 5.5em
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
+            background-color: $color-branco
             display: flex
             align-items: center
             justify-content: space-between
-            border: 1px solid #CA7027
-            margin: 0 0.5em 0.5em 0.5em
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
             transition: all 0.3s ease
-            
-            .name
-                color: #9A3D11
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
             .valor
-                color: #9A3D11
-            .img-item
-                width: 100px
-                height: 5em
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
                 margin-right: 0.5em
-                border-radius: 1em 1em
-        .cardapio-2:hover
-            border-left: 5px solid #D2691E
-            transform: translateY(-2px)
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15)
-        .cardapio-3
+        .menu-salgados__item-2:hover
+            @include hover-menu-item
+
+        .menu-salgados__item-3
             width: 350px
-            height: 5.5em
-            background-color: #fff
-            display: flex
-            align-items: center
-            justify-content: space-between
-            border: 1px solid #CA7027
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
             border-radius: 0 0 0.5em 0.5em
-            margin: 0 0.5em 0.5em 0.5em
+            background-color: $color-branco
+            display: flex
+            align-items: center
+            justify-content: space-between
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
             transition: all 0.3s ease
-            .name
-                color: #9A3D11
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
             .valor
-                color: #9A3D11
-            .img-item
-                width: 100px
-                height: 5em
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
                 margin-right: 0.5em
-                border-radius: 1em 1em
-        .cardapio-3:hover
-            border-left: 5px solid #D2691E
-            transform: translateY(-2px)
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15)
+        .menu-salgados__item-3:hover
+            @include hover-menu-item
 
+.section-menu__Café
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 1em
+    @include desktop
+        flex-direction: row
+    .menu-salgados__fundoC
+        background-color: $color-primario
+        border-radius: 1em 1em 0 0
+        box-shadow: 0 4px 10px rgba(100, 50, 25, 0.4)
+        .menu-salgados__h3
+            font-size: 1.5em
+            color: $color-branco
+            padding: 0.5em
+            text-align: start
+            @include desktop
+                font-size: 1.9em
+        .menu-salgados__item
+            width: 350px
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
+            background-color: $color-branco
+            border-radius: 0.5em 0.5em 0 0
+            display: flex
+            align-items: center
+            justify-content: space-between
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+            transition: all 0.3s ease
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
+                font-weight: bold
+                margin-left: 0.5em
+            .valor
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
+                margin-right: 0.5em
+
+        .menu-salgados__item:hover
+            @include hover-menu-item
+
+        .menu-salgados__item-2
+            width: 350px
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
+            background-color: $color-branco
+            display: flex
+            align-items: center
+            justify-content: space-between
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+            transition: all 0.3s ease
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
+                font-weight: bold
+                margin-left: 0.5em
+            .valor
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
+                margin-right: 0.5em
+        .menu-salgados__item-2:hover
+            @include hover-menu-item
+
+        .menu-salgados__item-3
+            width: 350px
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
+            border-radius: 0 0 0.5em 0.5em
+            background-color: $color-branco
+            display: flex
+            align-items: center
+            justify-content: space-between
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+            transition: all 0.3s ease
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
+                font-weight: bold
+                margin-left: 0.5em
+            .valor
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
+                margin-right: 0.5em
+        .menu-salgados__item-3:hover
+            @include hover-menu-item
+
+.section-menu__Bebidas
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 1em
+    @include desktop
+
+    .menu-salgados__fundoC
+        background-color: $color-primario
+        border-radius: 1em 1em 0 0
+        box-shadow: 0 4px 10px rgba(100, 50, 25, 0.4)
+
+        .menu-salgados__h3
+            font-size: 1.5em
+            color: $color-branco
+            padding: 0.5em
+            text-align: start
+            @include desktop
+                font-size: 1.9em
+        .menu-salgados__item
+            width: 350px
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
+            background-color: $color-branco
+            border-radius: 0.5em 0.5em 0 0
+            display: flex
+            align-items: center
+            justify-content: space-between
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+            transition: all 0.3s ease
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
+                font-weight: bold
+                margin-left: 0.5em
+            .valor
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
+                margin-right: 0.5em
+
+        .menu-salgados__item:hover
+            @include hover-menu-item
+
+        .menu-salgados__item-2
+            width: 350px
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
+            background-color: $color-branco
+            display: flex
+            align-items: center
+            justify-content: space-between
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+            transition: all 0.3s ease
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
+                font-weight: bold
+                margin-left: 0.5em
+            .valor
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
+                margin-right: 0.5em
+        .menu-salgados__item-2:hover
+            @include hover-menu-item
+
+        .menu-salgados__item-3
+            width: 350px
+            height: 5em
+            margin: 0 0.5em 0.5em 0.5em
+            border-radius: 0 0 0.5em 0.5em
+            background-color: $color-branco
+            display: flex
+            align-items: center
+            justify-content: space-between
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+            transition: all 0.3s ease
+            @include desktop
+                width: 450px
+            .item
+                color: $color-primario
+                font-weight: bold
+                margin-left: 0.5em
+            .valor
+                color: $color-segudaria
+                font-weight: bold
+            .item-img
+                width: 75px
+                height: 75px
+                margin-right: 0.5em
+        .menu-salgados__item-3:hover
+            @include hover-menu-item

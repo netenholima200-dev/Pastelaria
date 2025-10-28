@@ -1,0 +1,24 @@
+@media (min-width: 1030px) {
+    .section-menu__Bebidas {
+        display: grid;
+        grid-template-areas:
+            'bebidas cervejas'
+            'bebidas cervejas'
+            'bebidas destilados';
+
+    }
+
+    #bebidas {
+        grid-area: bebidas;
+        margin-top: 0;
+        margin-bottom: 75px;
+    }
+
+    #cervejas {
+        grid-area: cervejas;
+    }
+
+    #destilados {
+        grid-area: destilados;
+    }
+}
