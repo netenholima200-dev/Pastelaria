@@ -183,7 +183,7 @@
   text-align: center;
 }
 .menu-promocao__legends p {
-  color: #CA7027;
+  color: #F97415;
   font-size: 1em;
 }
 @media (min-width: 1030px) {
@@ -241,6 +241,7 @@
 }
 .section-menu__salgados .menu-salgados__fundoC .menu-salgados__h3 {
   font-size: 1.5em;
+  font-family: "Instrument Sans", sans-serif;
   color: #fff;
   padding: 0.5em;
   text-align: start;
@@ -369,6 +370,7 @@
 @media (min-width: 1030px) {
   .section-menu__Café {
     flex-direction: row;
+    margin-bottom: 3em;
   }
 }
 .section-menu__Café .menu-salgados__fundoC {
@@ -625,6 +627,109 @@
   border-left: 5px solid #D2691E;
   transform: translateY(-2px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.section-btn__whats {
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 1em;
+  background: linear-gradient(135deg, #B25334, #F97415);
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 1030px) {
+  .section-btn__whats {
+    max-width: 50%;
+    border-radius: 0 0 1em 1em;
+  }
+}
+.section-btn__whats .btn-whats__h2 {
+  margin-top: 1em;
+  font-size: 2em;
+  font-size: "Instrument Sans", sans-serif;
+  color: #fff;
+}
+.section-btn__whats .btn-whats__p {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 1em;
+  color: #fff;
+}
+.section-btn__whats .btn-whats__link {
+  margin-top: 1em;
+  display: inline-block;
+  padding: 1em 1.5623em;
+  background-color: #ffe8d3;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  color: #B25334;
+  border-radius: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section-btn__whats .btn-whats__link .img-whats {
+  width: 2em;
+  margin-right: 0.625em;
+  color: #B25334;
+}
+.section-btn__whats .btn-whats__link:hover {
+  background-color: #fff1e3;
+  color: #F97415;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px) scale(1.01);
+  filter: brightness(1.1);
+}
+
+.section-cardapio {
+  margin: 1em auto;
+  max-width: 100%;
+  background: linear-gradient(135deg, #B25334, #F97415);
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 1030px) {
+  .section-cardapio {
+    max-width: 50%;
+    border-radius: 1em 1em 0 0;
+  }
+}
+.section-cardapio .cardapio__h2 {
+  font-size: 2em;
+  font-size: "Instrument Sans", sans-serif;
+  color: #fff;
+}
+.section-cardapio .cardapio__p {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 1em;
+  color: #fff;
+}
+
+.footer {
+  margin-top: 1em;
+  width: 100%;
+  background: linear-gradient(135deg, #B25334, #F97415);
+}
+.footer .section-contatos {
+  padding: 1em;
+}
+.footer .section-contatos h3 {
+  font-size: 2em;
+  color: #fff;
+}
+.footer .section-contatos {
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
