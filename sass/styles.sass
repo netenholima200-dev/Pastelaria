@@ -49,6 +49,7 @@
 
         ul
             li
+                margin-left: 0.5em
                 margin-top: 1em
                 list-style-type: none
                 a
@@ -156,7 +157,25 @@
         transform: translateY(-2px) scale(1.01)
         filter: brightness(1.1)
 
-
+.whats-flutuante
+    a
+        width: 45px
+        height: 45px
+        position: fixed
+        display: block
+        background-color: #25D366
+        border-radius: 50%
+        right: 0.5em
+        top: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+    a:hover
+        background-color: #1DA753
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3)
+    .svg-flut
+        color: #fff
 
 .div-cabecalho
     display: none
@@ -173,7 +192,7 @@
     text-align: center
     font-size: 2em
     color: $color-primario
-    margin: 0 0 1em 0
+    margin: 1em 0 1em 0
 
 .section-menu__salgados
     height: 100%
@@ -217,13 +236,13 @@
                 margin-left: 0.5em
                 @include cardapio-nome
                 @include nome-desktop
-                
+
             .valor
                 color: $color-segudaria
                 font-weight: bold
                 @include cardapio-valor
                 @include valor-desktop
-                
+
             .item-img
                 width: 75px
                 height: 75px
@@ -334,7 +353,7 @@
                 margin-left: 0.5em
                 @include cardapio-nome
                 @include nome-desktop
-                    
+
             .valor
                 color: $color-segudaria
                 font-weight: bold
@@ -371,7 +390,7 @@
                 font-weight: bold
                 @include cardapio-valor
                 @include valor-desktop
-                
+
             .item-img
                 width: 75px
                 height: 75px
@@ -403,7 +422,7 @@
                 font-weight: bold
                 @include cardapio-valor
                 @include valor-desktop
-                
+
             .item-img
                 width: 75px
                 height: 75px
@@ -448,18 +467,16 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
-                @include cardapio-nome 
-                @include nome-desktop 
+                @include cardapio-nome
+                @include nome-desktop
             .valor
                 color: $color-segudaria
                 font-weight: bold
-                @include cardapio-valor         
+                @include cardapio-valor
             .item-img
                 width: 75px
                 height: 75px
                 margin-right: 0.5em
-                
-                
 
         .menu-salgados__item:hover
             @include hover-menu-item
@@ -482,18 +499,18 @@
                 margin-left: 0.5em
                 @include cardapio-nome
                 @include nome-desktop
-                
+
             .valor
                 color: $color-segudaria
                 font-weight: bold
                 @include cardapio-valor
                 @include valor-desktop
-                
+
             .item-img
                 width: 75px
                 height: 75px
                 margin-right: 0.5em
-                
+
         .menu-salgados__item-2:hover
             @include hover-menu-item
 
@@ -521,20 +538,19 @@
                 font-weight: bold
                 @include cardapio-valor
                 @include valor-desktop
-                
+
             .item-img
                 width: 75px
                 height: 75px
                 margin-right: 0.5em
-                
-                
+
         .menu-salgados__item-3:hover
             @include hover-menu-item
 
 .section-btn__whats
     margin: 0 auto
     max-width: 100%
-    border-radius:  0 0 1em 1em
+    border-radius: 0 0 1em 1em
     height: 30vh
     display: flex
     align-items: center
@@ -586,7 +602,6 @@
 .section-cardapio
     margin: 1em auto
     max-width: 100%
-    border-radius: 1em 1em 0 0
     height: 20vh
     display: flex
     align-items: center
