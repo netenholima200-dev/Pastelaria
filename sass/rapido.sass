@@ -3,12 +3,37 @@
     transform: translateY(-2px)
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15)
 
+@mixin cardapio-nome
+    width: 6.875em
+    text-align: start
+
+@mixin cardapio-valor
+    width: 6.875em
+    text-align: center
+
+@mixin valor-desktop
+    @include desktop
+    width: 9.375em
+    text-align: center
+
+@mixin nome-desktop
+    @include desktop
+    width: 9.375em
+    text-align: start
+    
+    
 @mixin desktop
     @media (min-width: 1030px)
         @content
 
+$tamanho-font-desk-h2: 3.5em 
+$tamanho-font-deskt-P:1.5em
+$tamanho-font-mobile-h2: 2.5em
+$tamanho-font-mobile-P:1em
 
 $color-primario: #B25334
 $color-segudaria: #F97415
 $color-branco: #fff
 $font-primaria: "Instrument Sans", sans-serif
+
+

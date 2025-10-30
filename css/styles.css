@@ -114,7 +114,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to top, rgba(255, 163, 64, 0.85), rgba(255, 180, 90, 0.55), rgba(255, 210, 130, 0.2)), url(/img/benner.jpg);
+  background-image: linear-gradient(rgba(178, 83, 52, 0.8), rgba(249, 116, 21, 0.8)), url(/img/banner.png);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,43 +160,6 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px) scale(1.01);
   filter: brightness(1.1);
-}
-
-.menu-promocao__legends {
-  height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #fff;
-}
-@media (min-width: 1030px) {
-  .menu-promocao__legends {
-    height: 35vh;
-  }
-}
-.menu-promocao__legends .menu-promocao__h3 {
-  font-size: 2.5em;
-  font-family: "Instrument Sans", sans-serif;
-  color: #9A3D11;
-  padding-bottom: 0.2em;
-  text-align: center;
-}
-.menu-promocao__legends p {
-  color: #F97415;
-  font-size: 1em;
-}
-@media (min-width: 1030px) {
-  .menu-promocao__legends .menu-promocao__h3 {
-    font-size: 4em;
-  }
-  .menu-promocao__legends p {
-    font-size: 2em;
-  }
-}
-
-.grade-imgs {
-  background-color: #ffffff;
 }
 
 .div-cabecalho {
@@ -272,10 +235,22 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__salgados .menu-salgados__fundoC .menu-salgados__item .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__salgados .menu-salgados__fundoC .menu-salgados__item .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
+}
+.section-menu__salgados .menu-salgados__fundoC .menu-salgados__item .valor {
+  width: 9.375em;
+  text-align: center;
 }
 .section-menu__salgados .menu-salgados__fundoC .menu-salgados__item .item-img {
   width: 75px;
@@ -307,10 +282,22 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__salgados .menu-salgados__fundoC .menu-salgados__item-2 .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__salgados .menu-salgados__fundoC .menu-salgados__item-2 .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
+}
+.section-menu__salgados .menu-salgados__fundoC .menu-salgados__item-2 .valor {
+  width: 9.375em;
+  text-align: center;
 }
 .section-menu__salgados .menu-salgados__fundoC .menu-salgados__item-2 .item-img {
   width: 75px;
@@ -343,10 +330,22 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__salgados .menu-salgados__fundoC .menu-salgados__item-3 .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__salgados .menu-salgados__fundoC .menu-salgados__item-3 .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
+}
+.section-menu__salgados .menu-salgados__fundoC .menu-salgados__item-3 .valor {
+  width: 9.375em;
+  text-align: center;
 }
 .section-menu__salgados .menu-salgados__fundoC .menu-salgados__item-3 .item-img {
   width: 75px;
@@ -410,10 +409,22 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__Café .menu-salgados__fundoC .menu-salgados__item .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__Café .menu-salgados__fundoC .menu-salgados__item .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
+}
+.section-menu__Café .menu-salgados__fundoC .menu-salgados__item .valor {
+  width: 9.375em;
+  text-align: center;
 }
 .section-menu__Café .menu-salgados__fundoC .menu-salgados__item .item-img {
   width: 75px;
@@ -445,10 +456,22 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__Café .menu-salgados__fundoC .menu-salgados__item-2 .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__Café .menu-salgados__fundoC .menu-salgados__item-2 .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
+}
+.section-menu__Café .menu-salgados__fundoC .menu-salgados__item-2 .valor {
+  width: 9.375em;
+  text-align: center;
 }
 .section-menu__Café .menu-salgados__fundoC .menu-salgados__item-2 .item-img {
   width: 75px;
@@ -481,10 +504,22 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__Café .menu-salgados__fundoC .menu-salgados__item-3 .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__Café .menu-salgados__fundoC .menu-salgados__item-3 .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
+}
+.section-menu__Café .menu-salgados__fundoC .menu-salgados__item-3 .valor {
+  width: 9.375em;
+  text-align: center;
 }
 .section-menu__Café .menu-salgados__fundoC .menu-salgados__item-3 .item-img {
   width: 75px;
@@ -522,7 +557,7 @@
   }
 }
 .section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item {
-  width: 350px;
+  width: 21.875em;
   height: 5em;
   margin: 0 0.5em 0.5em 0.5em;
   background-color: #fff;
@@ -542,10 +577,18 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
 }
 .section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item .item-img {
   width: 75px;
@@ -577,10 +620,22 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item-2 .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item-2 .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
+}
+.section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item-2 .valor {
+  width: 9.375em;
+  text-align: center;
 }
 .section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item-2 .item-img {
   width: 75px;
@@ -613,10 +668,22 @@
   color: #B25334;
   font-weight: bold;
   margin-left: 0.5em;
+  width: 6.875em;
+  text-align: start;
+}
+.section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item-3 .item {
+  width: 9.375em;
+  text-align: start;
 }
 .section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item-3 .valor {
   color: #F97415;
   font-weight: bold;
+  width: 6.875em;
+  text-align: center;
+}
+.section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item-3 .valor {
+  width: 9.375em;
+  text-align: center;
 }
 .section-menu__Bebidas .menu-salgados__fundoC .menu-salgados__item-3 .item-img {
   width: 75px;
@@ -648,15 +715,24 @@
 }
 .section-btn__whats .btn-whats__h2 {
   margin-top: 1em;
-  font-size: 2em;
-  font-size: "Instrument Sans", sans-serif;
+  font-size: 2.5em;
   color: #fff;
+}
+@media (min-width: 1030px) {
+  .section-btn__whats .btn-whats__h2 {
+    font-size: 3.5em;
+  }
 }
 .section-btn__whats .btn-whats__p {
   text-align: center;
   margin-top: 0.5em;
   font-size: 1em;
   color: #fff;
+}
+@media (min-width: 1030px) {
+  .section-btn__whats .btn-whats__p {
+    font-size: 1.5em;
+  }
 }
 .section-btn__whats .btn-whats__link {
   margin-top: 1em;
@@ -692,6 +768,7 @@
   margin: 1em auto;
   max-width: 100%;
   background: linear-gradient(135deg, #B25334, #F97415);
+  border-radius: 0.5em 0.5em 0 0;
   height: 30vh;
   display: flex;
   align-items: center;
@@ -705,9 +782,14 @@
   }
 }
 .section-cardapio .cardapio__h2 {
-  font-size: 2em;
-  font-size: "Instrument Sans", sans-serif;
+  font-size: 2.5em;
+  font-family: "Instrument Sans", sans-serif;
   color: #fff;
+}
+@media (min-width: 1030px) {
+  .section-cardapio .cardapio__h2 {
+    font-size: 3.5em;
+  }
 }
 .section-cardapio .cardapio__p {
   text-align: center;
@@ -715,21 +797,97 @@
   font-size: 1em;
   color: #fff;
 }
+@media (min-width: 1030px) {
+  .section-cardapio .cardapio__p {
+    font-size: 1.5em;
+  }
+}
 
 .footer {
+  height: 35vh;
   margin-top: 1em;
-  width: 100%;
   background: linear-gradient(135deg, #B25334, #F97415);
-}
-.footer .section-contatos {
   padding: 1em;
 }
-.footer .section-contatos h3 {
-  font-size: 2em;
+@media (min-width: 1030px) {
+  .footer {
+    height: 30vh;
+    margin-top: 1em;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1030px) {
+  .footer .descricao {
+    margin: 0;
+    width: 400px;
+    height: 250px;
+  }
+}
+.footer .descricao .logo-descricao {
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Instrument Sans", sans-serif;
+}
+.footer .descricao .descricao-p {
+  margin-top: 0.5em;
+  line-height: 1.5em;
   color: #fff;
 }
-.footer .section-contatos {
-  font-size: 1em;
+.footer .section-RedesSociais {
+  margin-top: 1em;
+}
+@media (min-width: 1030px) {
+  .footer .section-RedesSociais {
+    margin: 0;
+    width: 200px;
+    height: 250px;
+  }
+}
+.footer .section-RedesSociais .RedesSociais-h3 {
+  font-size: 1.5em;
+  color: #fff;
+  font-family: "Instrument Sans", sans-serif;
+}
+.footer .section-RedesSociais .whats-redes {
+  margin-top: 0.5em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0.5em;
+  text-decoration: none;
+}
+.footer .section-RedesSociais .insta-redes {
+  margin-top: 0.5em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0.5em;
+  text-decoration: none;
+}
+.footer .localizacao {
+  margin-top: 1em;
+}
+@media (min-width: 1030px) {
+  .footer .localizacao {
+    margin: 0;
+    width: 200px;
+    height: 250px;
+  }
+}
+.footer .localizacao .localizacao-h3 {
+  font-size: 1.5em;
+  color: #fff;
+  font-family: "Instrument Sans", sans-serif;
+}
+.footer .localizacao .localizacao-p {
+  margin-top: 0.5em;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

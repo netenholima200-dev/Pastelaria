@@ -1,9 +1,10 @@
+@import 'rapido'
+
 // --- MIXIN ---
 @mixin desktop
     @media (min-width: 1030px)
         @content
 
-@import 'rapido'
 // --- RESET ---
 *
     margin: 0
@@ -112,11 +113,7 @@
     background-position: top
     background-repeat: no-repeat
     background-size: cover
-    background-image: linear-gradient(
-            to top,
-            rgba(255, 163, 64, 0.85),
-            rgba(255, 180, 90, 0.55),
-            rgba(255, 210, 130, 0.2) ), url(/img/benner.jpg)
+    background-image: linear-gradient(rgba(178, 83, 52, 0.8), rgba(249, 116, 21, 0.8)), url(/img/banner.png)
     display: flex
     align-items: center
     justify-content: center
@@ -159,34 +156,7 @@
         transform: translateY(-2px) scale(1.01)
         filter: brightness(1.1)
 
-.menu-promocao__legends
-    height: 30vh
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-direction: column
-    background-color: #fff
-    @include desktop
-        height: 35vh
-    .menu-promocao__h3
-        font-size: 2.5em
-        font-family: $font-primaria
-        color: #9A3D11
 
-        padding-bottom: 0.2em
-        text-align: center
-    p
-        color: $color-segudaria
-        font-size: 1em
-
-    @include desktop
-        .menu-promocao__h3
-            font-size: 4em
-        p
-            font-size: 2em
-
-.grade-imgs
-    background-color: #ffffff
 
 .div-cabecalho
     display: none
@@ -246,9 +216,15 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome
+                @include nome-desktop
+                
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor
+                @include valor-desktop
+                
             .item-img
                 width: 75px
                 height: 75px
@@ -273,9 +249,13 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome
+                @include nome-desktop
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor
+                @include valor-desktop
             .item-img
                 width: 75px
                 height: 75px
@@ -300,9 +280,13 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome
+                @include nome-desktop
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor
+                @include valor-desktop
             .item-img
                 width: 75px
                 height: 75px
@@ -324,7 +308,7 @@
         background-color: $color-primario
         border-radius: 1em 1em 0 0
         box-shadow: 0 4px 10px rgba(100, 50, 25, 0.4)
-        
+
         .menu-salgados__h3
             font-size: 1.5em
             color: $color-branco
@@ -349,9 +333,14 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome
+                @include nome-desktop
+                    
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor
+                @include valor-desktop
             .item-img
                 width: 75px
                 height: 75px
@@ -376,9 +365,14 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome
+                @include nome-desktop
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor
+                @include valor-desktop
+                
             .item-img
                 width: 75px
                 height: 75px
@@ -403,9 +397,14 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome
+                @include nome-desktop
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor
+                @include valor-desktop
+                
             .item-img
                 width: 75px
                 height: 75px
@@ -434,7 +433,7 @@
             @include desktop
                 font-size: 1.9em
         .menu-salgados__item
-            width: 350px
+            width: 21.875em
             height: 5em
             margin: 0 0.5em 0.5em 0.5em
             background-color: $color-branco
@@ -450,13 +449,18 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome 
+                @include nome-desktop 
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor         
             .item-img
                 width: 75px
                 height: 75px
                 margin-right: 0.5em
+                
+                
 
         .menu-salgados__item:hover
             @include hover-menu-item
@@ -477,13 +481,20 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome
+                @include nome-desktop
+                
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor
+                @include valor-desktop
+                
             .item-img
                 width: 75px
                 height: 75px
                 margin-right: 0.5em
+                
         .menu-salgados__item-2:hover
             @include hover-menu-item
 
@@ -504,13 +515,20 @@
                 color: $color-primario
                 font-weight: bold
                 margin-left: 0.5em
+                @include cardapio-nome
+                @include nome-desktop
             .valor
                 color: $color-segudaria
                 font-weight: bold
+                @include cardapio-valor
+                @include valor-desktop
+                
             .item-img
                 width: 75px
                 height: 75px
                 margin-right: 0.5em
+                
+                
         .menu-salgados__item-3:hover
             @include hover-menu-item
 
@@ -519,7 +537,6 @@
     max-width: 100%
     margin-top: 1em
     background: linear-gradient(135deg, #B25334, #F97415)
-    
     height: 30vh
     display: flex
     align-items: center
@@ -530,14 +547,17 @@
         border-radius: 0 0 1em 1em
     .btn-whats__h2
         margin-top: 1em
-        font-size: 2em
-        font-size: $font-primaria
+        font-size: $tamanho-font-mobile-h2
         color: #fff
+        @include desktop
+            font-size: $tamanho-font-desk-h2
     .btn-whats__p
         text-align: center
         margin-top: 0.5em
-        font-size: 1em
+        font-size: $tamanho-font-mobile-P
         color: #fff
+        @include desktop
+            font-size: $tamanho-font-deskt-P
     .btn-whats__link
         margin-top: 1em
         display: inline-block
@@ -569,7 +589,7 @@
     margin: 1em auto
     max-width: 100%
     background: linear-gradient(135deg, #B25334, #F97415)
-    
+    border-radius: 0.5em 0.5em 0 0
     height: 30vh
     display: flex
     align-items: center
@@ -579,24 +599,84 @@
         max-width: 50%
         border-radius: 1em 1em 0 0
     .cardapio__h2
-        font-size: 2em
-        font-size: $font-primaria
+        font-size: $tamanho-font-mobile-h2
+        font-family: $font-primaria
         color: #fff
+        @include desktop
+            font-size: $tamanho-font-desk-h2
     .cardapio__p
         text-align: center
         margin-top: 0.5em
-        font-size: 1em
+        font-size: $tamanho-font-mobile-P
         color: #fff
-
+        @include desktop
+            font-size: $tamanho-font-deskt-P
 
 .footer
+    height: 35vh
     margin-top: 1em
-    width: 100%
     background: linear-gradient(135deg, #B25334, #F97415)
-    .section-contatos
-        padding: 1em
-        h3
-            font-size: 2em
+    padding: 1em
+    @include desktop
+        height: 30vh
+        margin-top: 1em
+        padding: 3em
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+
+    .descricao
+        @include desktop
+            margin: 0
+            width: 400px
+            height: 250px
+
+        .logo-descricao
             color: #fff
-        a
-        font-size: 1em
+            font-size: 1.5em
+            font-family: $font-primaria
+        .descricao-p
+            margin-top: 0.5em
+            line-height: 1.5em
+            color: #fff
+    .section-RedesSociais
+        margin-top: 1em
+        @include desktop
+            margin: 0
+            width: 200px
+            height: 250px
+
+        .RedesSociais-h3
+            font-size: 1.5em
+            color: #fff
+            font-family: $font-primaria
+        .whats-redes
+            margin-top: 0.5em
+            color: #fff
+            display: flex
+            align-items: center
+            text-align: center
+            gap: 0.5em
+            text-decoration: none
+        .insta-redes
+            margin-top: 0.5em
+            color: #fff
+            display: flex
+            align-items: center
+            text-align: center
+            gap: 0.5em
+            text-decoration: none
+    .localizacao
+        margin-top: 1em
+        @include desktop
+            margin: 0
+            width: 200px
+            height: 250px
+        .localizacao-h3
+            font-size: 1.5em
+            color: #fff
+            font-family: $font-primaria
+        .localizacao-p
+            margin-top: 0.5em
+            color: #fff
+            text-decoration: none
