@@ -31,7 +31,7 @@
   top: 4em;
   left: 0;
   width: 50%;
-  height: 40vh;
+  height: 50vh;
   visibility: hidden;
   background-color: #fff;
   text-align: start;
@@ -170,12 +170,13 @@
   display: block;
   background-color: #25D366;
   border-radius: 50%;
-  right: 0.5em;
-  top: 50%;
+  right: 0.7em;
+  top: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  z-index: 99;
 }
 .whats-flutuante a:hover {
   background-color: #1DA753;
@@ -824,7 +825,7 @@
 }
 
 .footer {
-  height: 35vh;
+  height: 40vh;
   margin-top: 3em;
   background: linear-gradient(135deg, #B25334, #F97415);
   padding: 1em;
