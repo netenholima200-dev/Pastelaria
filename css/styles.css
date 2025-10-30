@@ -181,7 +181,7 @@
   text-align: center;
   font-size: 2em;
   color: #B25334;
-  margin: 1em 0 1em 0;
+  margin: 0 0 1em 0;
 }
 
 .section-menu__salgados {
@@ -699,8 +699,7 @@
 .section-btn__whats {
   margin: 0 auto;
   max-width: 100%;
-  margin-top: 1em;
-  background: linear-gradient(135deg, #B25334, #F97415);
+  border-radius: 0 0 1em 1em;
   height: 30vh;
   display: flex;
   align-items: center;
@@ -715,8 +714,8 @@
 }
 .section-btn__whats .btn-whats__h2 {
   margin-top: 1em;
+  color: #B25334;
   font-size: 2.5em;
-  color: #fff;
 }
 @media (min-width: 1030px) {
   .section-btn__whats .btn-whats__h2 {
@@ -727,7 +726,7 @@
   text-align: center;
   margin-top: 0.5em;
   font-size: 1em;
-  color: #fff;
+  color: #F97415;
 }
 @media (min-width: 1030px) {
   .section-btn__whats .btn-whats__p {
@@ -767,9 +766,8 @@
 .section-cardapio {
   margin: 1em auto;
   max-width: 100%;
-  background: linear-gradient(135deg, #B25334, #F97415);
-  border-radius: 0.5em 0.5em 0 0;
-  height: 30vh;
+  border-radius: 1em 1em 0 0;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -784,7 +782,7 @@
 .section-cardapio .cardapio__h2 {
   font-size: 2.5em;
   font-family: "Instrument Sans", sans-serif;
-  color: #fff;
+  color: #B25334;
 }
 @media (min-width: 1030px) {
   .section-cardapio .cardapio__h2 {
@@ -795,7 +793,7 @@
   text-align: center;
   margin-top: 0.5em;
   font-size: 1em;
-  color: #fff;
+  color: #F97415;
 }
 @media (min-width: 1030px) {
   .section-cardapio .cardapio__p {
@@ -805,7 +803,7 @@
 
 .footer {
   height: 35vh;
-  margin-top: 1em;
+  margin-top: 3em;
   background: linear-gradient(135deg, #B25334, #F97415);
   padding: 1em;
 }
