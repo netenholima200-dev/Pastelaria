@@ -30,13 +30,13 @@
   position: absolute;
   top: 4em;
   left: 0;
-  width: 100%;
-  height: 50vh;
+  width: 50%;
+  height: 40vh;
   visibility: hidden;
   background-color: #fff;
   text-align: start;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  transform: translateY(-30px);
+  transform: translateX(-100%);
   opacity: 0;
   transition: all 0.4s ease;
 }
@@ -67,7 +67,7 @@
   text-align: center;
 }
 .hero-header .menu-mobile img {
-  width: 1em;
+  width: 2em;
 }
 .hero-header .menu-mobile:hover {
   background-color: #B25334;
